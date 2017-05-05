@@ -1,0 +1,16 @@
+h1 {
+  font-family: 'Ruluko', sans-serif;
+}
+
+.jumbotron {
+  background-color: #E3384A;
+}
+body {
+  font-family: 'Work Sans', sans-serif;
+  background-image: url(https://s3.amazonaws.com/spoonflower/public/design_thumbnails/0183/1351/CustomGoldPolkaDots_shop_preview.png);
+  background-repeat: repeat;
+}
+
+.container {
+  background-color: white;
+}
