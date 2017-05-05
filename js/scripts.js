@@ -2,32 +2,39 @@
 
 // // // // // back-end business logic // // // // //
 function pingPong(userInput) {
+  var parsedInput = parseInt(userInput);
+
   var newArray = [];
-  for (var i = 1; i < userInput; i++) {
-    if (i % 15 === 0) {
+  for (var multiple = 1; multiple <= parsedInput; multiple += 1) {
+    if (multiple % 15 === 0) {
       newArray.push("ping-pong");
-    } else if (i % 3 === 0) {
+    } else if (multiple % 3 === 0) {
       newArray.push ("ping");
-    } else if (i % 5 === 0) {
+    } else if (multiple % 5 === 0) {
       newArray.push ("pong");
     } else {
-      newArray.push (userInput.toString());
+      newArray.push (multiple);
       // newArray = newArray.toString().split(" ");
     }
+    // newArray = newArray.toString();
+    return newArray;
   }
 }
 // // // // // front-end user interface logic // // // // //
 $(function() {
   $("#formOne").submit(function(event) {
     event.preventDefault();
-    var userInput = parseInt($("#number").val());
-    //
-    // if (userInput === "") {
-    //   alert('Please enter a number to play')
-    //   return;
-    //   }
-    var result = pingPong(userInput);
-    $(".resultNumbers").text(result);
+    var userInput = $("#number").val();
+
+    if (userInput === "") {
+      alert('Please enter a number to play')
+      return;
+      }
+    var results = pingPong(userInput);
+
+    results.forEach(function(result){
+      $("#result-numbers").prepend("<li>" + "</li>");
+    });
 
     $("#output").show();
 
