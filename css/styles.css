@@ -1,5 +1,6 @@
 h1 {
   font-family: 'Ruluko', sans-serif;
+  text-align: center;
 }
 
 .jumbotron {
@@ -13,4 +14,8 @@ body {
 
 .container {
   background-color: white;
+}
+
+#output {
+  display: none;
 }
