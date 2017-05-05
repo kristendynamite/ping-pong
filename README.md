@@ -7,7 +7,7 @@ This web application takes a number from a user and returns a range of numbers f
 ## Setup
 1. Copy-paste this web address into your web browser:           .
 2. Enter a number in the available field.
-3. Click the 'play!' button to see the results.
+3. Click the 'Play!' button to see the results.
 
 ## Specs
 * It can count up to the provided number.
