@@ -5,7 +5,7 @@
 This web application takes a number from a user and returns a range of numbers from 1 to the chosen number, with exceptions, and return "ping", "pong", "pingpong" for numbers that fit those exceptions.
 
 ## Setup
-1. Copy-paste this web address into your web browser:           .
+1. Copy-paste this web address into your web browser: https://kristendynamite.github.io/ping-pong/          .
 2. Enter a number in the available field.
 3. Click the 'Play!' button to see the results.
 
